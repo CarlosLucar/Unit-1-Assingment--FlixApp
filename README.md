@@ -30,6 +30,14 @@ Landscape View:
 
 <img src="https://i.imgur.com/R9RID41.gif" width=550><br>
 
+Iphone 8 View:
+
+
+<img src="https://i.imgur.com/19HXKZ9.gif" width=250><br>
+
+Real Device view:
+
+<img src="https://i.imgur.com/8HTNaIp.gif" width=250><br>
 
 
 ### Notes
