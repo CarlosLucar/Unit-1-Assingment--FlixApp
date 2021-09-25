@@ -27,6 +27,7 @@ class MovieInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         
         movieTitle.text = (movie["title"] as! String)
@@ -34,7 +35,7 @@ class MovieInfoViewController: UIViewController {
         
         synopsis.text = (movie["overview"] as! String)
         
-        vote.text = "\(movie["vote_average"] ?? 0.0)/10"
+        vote.text = "\(round( movie["vote_average"] as! Double * 10) / 10.0 )/10"
         
         
         
@@ -51,7 +52,15 @@ class MovieInfoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let VideoViewController = segue.destination as! VideoViewController
+        
+        VideoViewController.id = movie!["id"] as! NSNumber
+        
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
